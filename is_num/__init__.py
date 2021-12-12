@@ -1,3 +1,4 @@
+"""Utility functions to calculate if an object is a number."""
 from .is_num import is_num
 
 
