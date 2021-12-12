@@ -1,4 +1,5 @@
 import setuptools
+import versioneer
 
 with open("README.rst", "r") as fhandle:
     long_description = fhandle.read()
@@ -7,7 +8,8 @@ with open("requirements.txt", "r") as fhandle:
 
 setuptools.setup(
         name="is-num",
-        version="0.0.1",
+        version=versioneer.get_version(),
+        cmdclass=versioneer.get_cmdclass(),
         author="Mark Yang",
         author_email="mark.xc.yang@gmail.com",
         description="A Python library to determine if something is a num.",
