@@ -13,20 +13,20 @@ def is_num(in_value):
 
     Examples
     --------
-    >>> is_number(1)
+    >>> is_num(1)
     True
-    >>> is_number("Hello")
+    >>> is_num("Hello")
     False
 
     You can also pass more complex objects, these will all be ''False''.
 
-    >>> is_number({"hi": "apple"})
+    >>> is_num({"hi": "apple"})
     False
 
     """
     try:
         float(in_value)
         return True
-    except ValueError:
+    except (ValueError, TypeError):
         return False
 
