@@ -1,8 +1,8 @@
 is-num
 ======
 .. image:: https://img.shields.io/pypi/v/is-num   
-    :target: https://pypi.org/project/is-num/
-    :alt: PyPI
+   :target: https://pypi.org/project/is-num/
+   :alt: PyPI
 
 A Python library to determine if something is a number.
 
@@ -11,7 +11,7 @@ Installation
 
 .. code-block:: bash
 
-    pip install is-num
+   pip install is-num
 
 Developing
 ----------
@@ -20,8 +20,8 @@ This project uses ``black`` to format code and ``flake8`` for linting. We also s
 
 .. code-block:: bash
 
-    $ pip install black flake8 pre-commit
-    $ pre-commit intall
+   $ pip install black flake8 pre-commit
+   $ pre-commit intall
 Testing
 -------
 
@@ -31,13 +31,13 @@ Install the test dependencies.
 
 .. code-block:: bash
 
-    $ pip install -r requirements_test.txt
+   $ pip install -r requirements_test.txt
 
 Run the tests.
 .. code-block:: bash
 
-    $ pytest
-    === 3 passed in 0.13 seconds ===
+   $ pytest
+   === 3 passed in 0.13 seconds ===
 
 Releasing
 ---------
@@ -46,12 +46,12 @@ Releases are published automatically when a tag is pushed to GitHub.
 
 .. code-block:: bash
 
-    # Set next version number
-    export RELEASE=x.x.x
+   # Set next version number
+   export RELEASE=x.x.x
 
-    # Create tags
-    git commit --allow-empty -m "Release $RELEASE"
-    git tag -a $RELEASE -m "Version $RELEASE"
+   # Create tags
+   git commit --allow-empty -m "Release $RELEASE"
+   git tag -a $RELEASE -m "Version $RELEASE"
 
-    # Push 
-    git push upstream --tags
+   # Push 
+   git push upstream --tags
