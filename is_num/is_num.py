@@ -29,4 +29,3 @@ def is_num(in_value):
         return True
     except (ValueError, TypeError):
         return False
-

@@ -4,4 +4,5 @@ from .is_float import is_float
 
 
 from . import _version
-__version__ = _version.get_versions()['version']
+
+__version__ = _version.get_versions()["version"]
