@@ -29,3 +29,6 @@ jobs:
             - name: Run tests
               run: pytest
 
+            - name: "Upload coverage to Codecov"
+              run: codecov/codecov-action@v1
+
